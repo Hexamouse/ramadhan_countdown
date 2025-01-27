@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import { FaMoon, FaStar, FaMosque } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -98,7 +98,7 @@ export default function RamadhanCountdown() {
         Ramadhan Countdown
       </motion.h1>
 
-      <div className="flex flex-col sm:flex-row justify-center sm:justify-between w-full max-w-4xl px-4 sm:px-8 gap-4">
+      <div className="flex flex-col sm:flex-row justify-center sm:justify-between w-full max-w-full sm:max-w-4xl px-4 sm:px-8 gap-4">
         {/* Nahdlatul Ulama Countdown Card */}
         <motion.div
           className="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 m-4 w-full sm:max-w-md"
@@ -135,6 +135,7 @@ export default function RamadhanCountdown() {
           <FaStar className="text-yellow-400 text-5xl sm:text-6xl mx-auto mt-4" />
         </motion.div>
       </div>
+
 
       <footer className="mt-6 sm:mt-10 py-4 px-6 sm:px-8">
         <p className="text-center text-yellow-500 text-sm sm:text-base">
